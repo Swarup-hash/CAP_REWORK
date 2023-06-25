@@ -7,6 +7,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	
+
+	
+	<script src="script.js" defer></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js" defer></script>
+
 
 
 </head>
@@ -44,70 +53,76 @@
 				</div>
 			</div>
 		</div>
+		<br>
 		<!--Header End-->
 
-		<!--Navbar-->
-		<section class="main-container">
-			<div class="tab-nav-bar">
-				<div class="tab-navigation">
-					<i class="uil uil-angle-left left-btn"></i>
-					<i class="uil uil-angle-right right-btn"></i>
-					<ul class="tab-menu">
-						<li class="tab-btn active">Home</li>
-						<li class="tab-btn">About Us</li>
-						<li class="tab-btn">What We Do</li>
-						<li class="tab-btn">Freedom Farm</li>
-						<li class="tab-btn">Ambulance</li>
-						<li class="tab-btn">Support Our Work</li>
-						<li class="tab-btn">Merchandise</li>
-						<li class="tab-btn">Update</li>
-						<li class="tab-btn">Contact Us</li>
-					</ul>
-				</div>
+			<!--Navbar-->
+
+		<div class="Navbar">
+   
+			<div class="wrapper">
+			  <div class="icon"><i id="left" class="uil uil-angle-left left-btn"></i></div>
+			  <ul class="tabs-box">
+				<li class="tab">Home</li>
+				<li class="tab active">About Us</li>
+				<li class="tab">What We Do</li>
+				<li class="tab">Freedom Farm</li>
+				<li class="tab">Ambulance</li>
+				<li class="tab">Support Our Work</li>
+				<li class="tab">Merchandise</li>
+				<li class="tab">Update</li>
+				<li class="tab">Gallery</li>
+				<li class="tab">Contact Us</li>
+			  </ul>
+			  <div class="icon"><i id="right" class="uil uil-angle-right right-btn"></i></div>
 			</div>
+		</div>
+			<br>
+	<!--Navbar end-->
+	<!--Home Page-->
 
-			<!--Navbar end-->
+	
+		<section class="main-container">
+			
 
-			<!--Home Page-->
-			<div class="tab-content">
-				<div class="tab active">
-					<div class="row">
-						<div class="slideshow-container">
+				<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+				  <img src="./images/Team.jpg" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="./images/Carousal6.JPG" style="width:100%">
+				</div>
+				
+				<div class="mySlides fade">
+				  <img src="./images/Event.JPG" style="width:100%">
+				</div>
 
-							<div class="mySlides fade">
-								<img src="./images/Event.JPG" style="width:100%">
-							</div>
+				<div class="mySlides fade">
+					<img src="./images/Shelter (2).JPG" style="width:100%">
+				</div>
 
-							<div class="mySlides fade">
-								<img src="./images/Carousal6.JPG" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-								<img src="./images/Shelter (2).JPG" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-								<img src="./images/Donate.JPG" style="width:100%">
-							</div>
-
-							<div class="mySlides fade">
-								<img src="./images/Carousal1.jpg" style="width:100%">
-							</div>
-
-							<a class="prev" onclick="plusSlides(-1)">❮</a>
-							<a class="next" onclick="plusSlides(1)">❯</a>
-						</div>
-
-					</div>
-
-					<div style="text-align:center">
-						<span class="dot" onclick="currentSlide(1)"></span>
-						<span class="dot" onclick="currentSlide(2)"></span>
-						<span class="dot" onclick="currentSlide(3)"></span>
-						<span class="dot" onclick="currentSlide(4)"></span>
-						<span class="dot" onclick="currentSlide(5)"></span>
-
-					</div>
+				<div class="mySlides fade">
+					<img src="./images/Education.JPG" style="width:100%">
+				</div>
+				  
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				  <span class="dot" onclick="currentSlide(4)"></span>
+				  <span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+				
+			
+		
 					<br>
 					<article class="postcard light blue">
 						<a class="postcard__img_link" href="">
@@ -136,7 +151,156 @@
 							</ul>
 						</div>
 					</article>
-					<hr>
+					<br>
+
+
+					<!--What We ALL Do in grid-->
+
+				<section class="cards-wrapper">
+				  <div class="card-grid-space">
+					<div class="num">01</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+					  <div>
+						<h1>HTML Syntax</h1>
+						<p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
+						<div class="date">6 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+				  <div class="card-grid-space">
+					<div class="num">02</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+					  <div>
+						<h1>Basic types of HTML tags</h1>
+						<p>Learn about some of the most common HTML tags…</p>
+						<div class="date">9 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+				  <div class="card-grid-space">
+					<div class="num">03</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+					  <div>
+						<h1>Links, images and about file paths</h1>
+						<p>Learn how to use links and images along with file paths…</p>
+						<div class="date">14 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+
+				  <div class="card-grid-space">
+					<div class="num">01</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/06/html-syntax/" style="--bg-img: url(https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/html-syntax/cover.jpg)">
+					  <div>
+						<h1>HTML Syntax</h1>
+						<p>The syntax of a language is how it works. How to actually write it. Learn HTML syntax…</p>
+						<div class="date">6 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+				  <div class="card-grid-space">
+					<div class="num">02</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+					  <div>
+						<h1>Basic types of HTML tags</h1>
+						<p>Learn about some of the most common HTML tags…</p>
+						<div class="date">9 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+				  <div class="card-grid-space">
+					<div class="num">03</div>
+					<a class="card" href="https://codetheweb.blog/2017/10/14/links-images-about-file-paths/" style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/links-images-about-file-paths/cover.jpg')">
+					  <div>
+						<h1>Links, images and about file paths</h1>
+						<p>Learn how to use links and images along with file paths…</p>
+						<div class="date">14 Oct 2017</div>
+						<div class="tags">
+						  <div class="tag">HTML</div>
+						</div>
+					  </div>
+					</a>
+				  </div>
+
+				  
+				  <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
+				</section>
+
+					<!--What We ALL Do in grid END-->
+
+					<!--friends of cap-->
+					<div class="container">
+						<h2 style="text-align: center; margin-bottom: 10px; text-decoration: underline;" id="updates"><a
+							href="#"><strong style="color: black;">Friends of CAP</strong></a></h2>
+				
+				
+						<div class="col-lg-10 mx-auto">
+						  <article class="postcard light blue">
+							<div class="postcard__text t-dark">
+							  <h1 class="postcard__title blue text-black"><a href="./user/AboutCap.html">Friends Of CAP</a></h1>
+				
+							  <div class="postcard__bar"></div>
+							  <div class="postcard__preview-txt text-black">We as an organization works with multiple prespective of NGO's to support there work supporting an NGO is a long-term commitment. Find an NGO whose mission and values align with your own, and explore ways to support them that are sustainable and meaningful to you.</div>
+							  <ul class="postcard__tagbox">
+								<li class="tag__item play blue text-black">
+								  <a href="./user/AboutCap.html"><button>Learn More...</button></a>
+								</li>
+							  </ul>
+							</div>
+						  </article>
+						</div>
+
+						<div class="row">
+							<div class="container">
+							   <section class="customer-logos slider">
+								  <div class="slide"><img src="../CAP-Website-main/images/MuseFondationLogo.jpg"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/CAPlogo.png"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/WagTialsLogo.png"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/MuseFondationLogo.jpg"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/CAPlogo.png"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/WagTialsLogo.png"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/MuseFondationLogo.jpg"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/CAPlogo.png"></div>
+								  <div class="slide"><img src="../CAP-Website-main/images/WagTialsLogo.png"></div>
+							   </section>
+							</div>
+						</div><br>
+					  </div>
+
+					  <div class="container">
+						<h2 id="updates"><strong>Featured On</strong></h2>
+							  <div class="row">
+								<div class="container">
+								   <section class="customer-logos slider">
+									  <div class="slide"><img src="./images/lokmat.png"></div>
+									  <div class="slide"><img src="./images/Loksatta.png"></div>
+									  <div class="slide"><img src="./images/maharashtra times.png"></div>
+									  <div class="slide"><img src="./images/lokmat.png"></div>
+									  <div class="slide"><img src="./images/bombay times.png"></div>
+									  <div class="slide"><img src="./images/Loksatta.png"></div>
+									  <div class="slide"><img src="./images/maharashtra times.png"></div>
+									  <div class="slide"><img src="./images/bombay times.png"></div>
+									  <div class="slide"><img src="./images/lokmat.png"></div>
+								   </section>
+								</div>
+							</div><br>
+						  
+						</div>
 
 					
 
@@ -151,29 +315,7 @@
 
 
 
-			<div class="tab-content">
-				<div class="tab">
-					<div class="row">
-						<div class="left-column">
-							<div class="img-card">
-								<img src="./images/Adoption_VA.jpg" alt="">
-							</div>
-						</div>
-						<div class="right-column">
-							<div class="info">
-								<h2 class="navname">About Us</h2>
-								<div class="description">
-									<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati
-										laborum tempore illo ipsum! Amet nemo corrupti laboriosam expedita velit
-										voluptates quis minus harum aliquam nostrum earum, delectus similique totam?</p>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum, non error
-										eum alias fuga ea cumque nihil aut doloremque, sed at delectus magni impedit
-										quod voluptate,</p>
-								</div>
-							</div>
-						</div>
-
-					</div>
+			
 					<ul class="timeline">
 						<li style="--accent-color:#41516C">
 							<div class="date">2019</div>
@@ -207,257 +349,8 @@
 				<!------Page Two End------->
 
 
-				<div class="tab-content">
-					<div class="tab">
-						<div class="row">
-							<div class="left-column">
-								<div class="img-card">
-									<img src="./images/Ambulance.jpg" alt="">
-								</div>
-							</div>
-							<div class="right-column">
-								<div class="info">
-									<h2 class="navname">What We Do</h2>
-									<div class="description">
-										<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia obcaecati
-											laborum tempore illo ipsum! Amet nemo corrupti laboriosam expedita velit
-											voluptates quis minus harum aliquam nostrum earum, delectus similique totam?
-										</p>
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum, non
-											error eum alias fuga ea cumque nihil aut doloremque, sed at delectus magni
-											impedit quod voluptate,</p>
-									</div>
-								</div>
-							</div>
 
-						</div>
-						<h1 class="country">Japan</h1>
-					</div>
-
-					<!------Page Three End------->
-
-
-					<div class="tab-content">
-						<div class="tab">
-							<div class="row">
-								<div class="left-column">
-									<div class="img-card">
-										<img src="./images/volunteer.jpg" alt="">
-									</div>
-								</div>
-								<div class="right-column">
-									<div class="info">
-										<h2 class="navname">Paris</h2>
-										<div class="description">
-											<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-												obcaecati laborum tempore illo ipsum! Amet nemo corrupti laboriosam
-												expedita velit voluptates quis minus harum aliquam nostrum earum,
-												delectus similique totam?</p>
-											<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet earum,
-												non error eum alias fuga ea cumque nihil aut doloremque, sed at delectus
-												magni impedit quod voluptate,</p>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<h1 class="country">Japan</h1>
-						</div>
-
-						<!------Page Four End------->
-
-
-						<div class="tab-content">
-							<div class="tab">
-								<div class="row">
-									<div class="left-column">
-										<div class="img-card">
-											<img src="./images/Virtual adoption.jpg" alt="">
-										</div>
-									</div>
-									<div class="right-column">
-										<div class="info">
-											<h2 class="navname">Mexico city</h2>
-											<div class="description">
-												<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia
-													obcaecati laborum tempore illo ipsum! Amet nemo corrupti laboriosam
-													expedita velit voluptates quis minus harum aliquam nostrum earum,
-													delectus similique totam?</p>
-												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-													earum, non error eum alias fuga ea cumque nihil aut doloremque, sed
-													at delectus magni impedit quod voluptate,</p>
-											</div>
-										</div>
-									</div>
-
-								</div>
-								<h1 class="country">Japan</h1>
-							</div>
-
-							<!------Page Five End------->
-
-
-							<div class="tab-content">
-								<div class="tab">
-									<div class="row">
-										<div class="left-column">
-											<div class="img-card">
-												<img src="./images/TempAmbulance.jpg" alt="">
-											</div>
-										</div>
-										<div class="right-column">
-											<div class="info">
-												<h2 class="navname">Florence</h2>
-												<div class="description">
-													<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-														Mollitia obcaecati laborum tempore illo ipsum! Amet nemo
-														corrupti laboriosam expedita velit voluptates quis minus harum
-														aliquam nostrum earum, delectus similique totam?</p>
-													<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-														earum, non error eum alias fuga ea cumque nihil aut doloremque,
-														sed at delectus magni impedit quod voluptate,</p>
-												</div>
-											</div>
-										</div>
-
-									</div>
-									<h1 class="country">Japan</h1>
-								</div>
-
-								<!------Page Six End------->
-
-
-									<div class="tab-content">
-										<div class="tab">
-											<div class="row">
-												<div class="left-column">
-													<div class="img-card">
-														<img src="./images/Build shelter.JPG" alt="">
-													</div>
-												</div>
-												<div class="right-column">
-													<div class="info">
-														<h2 class="navname">Moscow</h2>
-														<div class="description">
-															<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-																Mollitia obcaecati laborum tempore illo ipsum! Amet nemo
-																corrupti laboriosam expedita velit voluptates quis minus
-																harum aliquam nostrum earum, delectus similique totam?
-															</p>
-															<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-																Eveniet earum, non error eum alias fuga ea cumque nihil
-																aut doloremque, sed at delectus magni impedit quod
-																voluptate,</p>
-														</div>
-													</div>
-												</div>
-
-											</div>
-											<h1 class="country">Japan</h1>
-										</div>
-
-										<!------Page Seven End------->
-
-
-										<div class="tab-content">
-											<div class="tab">
-												<div class="row">
-													<div class="left-column">
-														<div class="img-card">
-															<img src="./images/Shelter (2).JPG"
-																alt="">
-														</div>
-													</div>
-													<div class="right-column">
-														<div class="info">
-															<h2 class="navname">Sydney</h2>
-															<div class="description">
-																<p>Lorem ipsum dolor, sit amet consectetur adipisicing
-																	elit. Mollitia obcaecati laborum tempore illo ipsum!
-																	Amet nemo corrupti laboriosam expedita velit
-																	voluptates quis minus harum aliquam nostrum earum,
-																	delectus similique totam?</p>
-																<p>Lorem ipsum dolor sit amet consectetur adipisicing
-																	elit. Eveniet earum, non error eum alias fuga ea
-																	cumque nihil aut doloremque, sed at delectus magni
-																	impedit quod voluptate,</p>
-															</div>
-														</div>
-													</div>
-
-												</div>
-												<h1 class="country">Japan</h1>
-											</div>
-											<!------Page Eight End------->
-
-
-											<div class="tab-content">
-												<div class="tab">
-													<div class="row">
-														<div class="left-column">
-															<div class="img-card">
-																<img src="./images/Team.jpg" alt="">
-															</div>
-														</div>
-														<div class="right-column">
-															<div class="info">
-																<h2 class="navname">San Francisco</h2>
-																<div class="description">
-																	<p>Lorem ipsum dolor, sit amet consectetur
-																		adipisicing elit. Mollitia obcaecati laborum
-																		tempore illo ipsum! Amet nemo corrupti
-																		laboriosam expedita velit voluptates quis minus
-																		harum aliquam nostrum earum, delectus similique
-																		totam?</p>
-																	<p>Lorem ipsum dolor sit amet consectetur
-																		adipisicing elit. Eveniet earum, non error eum
-																		alias fuga ea cumque nihil aut doloremque, sed
-																		at delectus magni impedit quod voluptate,</p>
-																</div>
-															</div>
-														</div>
-
-													</div>
-													<h1 class="country">Japan</h1>
-												</div>
-
-
-												<div class="tab-content">
-													<div class="tab">
-														<div class="row">
-															<div class="left-column">
-																<div class="img-card">
-																	<img src="./images/Carousal1.jpg"
-																		alt="">
-																</div>
-															</div>
-															<div class="right-column">
-																<div class="info">
-																	<h2 class="navname">Amsterdam</h2>
-																	<div class="description">
-																		<p>Lorem ipsum dolor, sit amet consectetur
-																			adipisicing elit. Mollitia obcaecati laborum
-																			tempore illo ipsum! Amet nemo corrupti
-																			laboriosam expedita velit voluptates quis
-																			minus harum aliquam nostrum earum, delectus
-																			similique totam?</p>
-																		<p>Lorem ipsum dolor sit amet consectetur
-																			adipisicing elit. Eveniet earum, non error
-																			eum alias fuga ea cumque nihil aut
-																			doloremque, sed at delectus magni impedit
-																			quod voluptate,</p>
-																	</div>
-																</div>
-															</div>
-
-														</div>
-														<h1 class="country">Japan</h1>
-													</div>
-
-												</div>
 		</section>
 	</body>
-
-	<script src="script.js"></script>
 
 </html>
