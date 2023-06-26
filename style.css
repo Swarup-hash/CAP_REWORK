@@ -31,9 +31,9 @@ body{
     height: 6rem;
 }
 
-section{
+.main-container{
     position: relative;
-    margin: 0 80px;
+    margin: 0 50px;
     transition: 0.5s ease;
 }
 
@@ -48,7 +48,7 @@ section{
 
 }
 .wrapper {
-  padding: 6px;
+  padding: 4px;
   position: relative;
   overflow-x: hidden;
   max-width: 100%;
@@ -131,7 +131,7 @@ section{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1500px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
@@ -174,7 +174,7 @@ section{
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 1.6s ease;
 }
 
 .active, .dot:hover {
@@ -188,14 +188,10 @@ section{
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .6} 
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
 
   /*Slider End*/
 
@@ -330,8 +326,8 @@ section{
 	 display: block;
 	 background: #18151f;
 	 top: -20%;
-	 height: 130%;
-	 width: 55px;
+	 height: 100%;
+	 width: 60px;
    }
 	.postcard:hover .postcard__img {
 		transform: scale(1.1);
@@ -755,7 +751,7 @@ h2 {
 /*What we ALL do in grid*/
 
 :root {
-  --color: #3c3163;
+  --color: #889ef6;
   --transition-time: 0.5s;
 }
 
@@ -767,8 +763,6 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
   padding: 0rem;
-  margin: 0 auto;
-  width: max-content;
 }
 
 .card {
@@ -828,16 +822,6 @@ h2 {
 .card:hover .tags .tag {
   background: var(--color);
   color: white;
-}
-
-.card .date {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 0.75em;
-  padding: 1em;
-  line-height: 1em;
-  opacity: .8;
 }
 
 .card:before, .card:after {
@@ -918,7 +902,8 @@ h2 {
 
 @media screen and (max-width: 500px) {
   .cards-wrapper {
-    padding: 4rem 2rem;
+    padding: 0rem 1rem;
+    align-content: center;
   }
   .card {
     max-width: calc(100vw - 4rem);
@@ -934,3 +919,249 @@ h2 {
     margin: 0;
   }
 }
+
+/*Sliding Card*/
+
+
+
+.post-slide{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+.Ambpost-slide{
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 35px 35px;
+  border-radius: 10px;
+  box-shadow: 0px 14px 22px -9px #bbcbd8;
+}
+.post-slide .post-img{
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  width: 95%;
+  border-radius: 10px;
+}
+.post-slide .post-img img{
+  width: 100%;
+  height: 15rem;
+  transform: scale(1,1);
+  transition:transform 0.2s linear;
+}
+.post-slide:hover .post-img img{
+  transform: scale(1.1,1.1);
+}
+.post-slide .over-layer{
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  background: linear-gradient(-45deg, rgba(6,190,244,0.75) 0%, rgba(45,112,253,0.6) 100%);
+  transition:all 0.50s linear;
+}
+.post-slide:hover .over-layer{
+  opacity:1;
+  text-decoration:none;
+}
+.post-slide .over-layer i{
+  position: relative;
+  top:45%;
+  text-align:center;
+  display: block;
+  color:#fff;
+  font-size:25px;
+}
+.post-slide .post-content{
+  background:#fff;
+  padding: 2px 20px 40px;
+  border-radius: 15px;
+}
+.post-slide .post-title a{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight:bold;
+  color:#333;
+  display: inline-block;
+  text-transform:uppercase;
+  transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover{
+  text-decoration: none;
+  color:#3498db;
+}
+.owl-controls .owl-buttons{
+  text-align:center;
+  margin-top:20px;
+}
+.owl-controls .owl-buttons .owl-prev{
+  background: #fff;
+  position: absolute;
+  top:40%;
+  left:15px;
+  padding: 0 18px 0 15px;
+  border-radius: 50px;
+  box-shadow: 3px 14px 25px -10px #92b4d0;
+  transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-next{
+  background: #fff;
+  position: absolute;
+  top:40%;
+  right: 15px;
+  padding: 0 15px 0 18px;
+  border-radius: 50px;
+  box-shadow: -3px 14px 25px -10px #92b4d0;
+  transition: background 0.5s ease 0s;
+}
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after{
+  content:"\f104";
+  font-family: FontAwesome;
+  color: #333;
+  font-size:30px;
+}
+.owl-controls .owl-buttons .owl-next:after{
+  content:"\f105";
+}
+@media only screen and (max-width:1280px) {
+  .post-slide .post-content{
+      padding: 0px 15px 25px 15px;
+  }
+}
+
+
+/* SupportersLogo */
+.SupportersLogo .post-content{
+  background-color: transparent;
+}
+.SupportersLogo img{
+  background-color: transparent;
+  border-radius: 55%;
+}
+/* Footer */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
